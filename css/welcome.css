@@ -13,7 +13,6 @@ body {
     justify-content: center;
     font-size: 18px;
 }
-
 .container {
     width: 380px;
     max-width: 380px;
@@ -23,16 +22,13 @@ body {
     border-radius: 4px;
     justify-content: center;
 }
-
 .input:focus {
     border-color: #009579;
     background: #ffffff;
 }
-
 form {
     direction: ltr;
 }
-
 .input {
     display: block;
     width: 100%;
@@ -45,7 +41,6 @@ form {
     transition: 0.2s, black 0.2s;
     margin-bottom: 0.5rem;
 }
-
 #okeyLog,
 #okeySign {
     width: 100%;
@@ -60,42 +55,33 @@ form {
     background: #009579;
     margin-bottom: 1rem;
 }
-
 .button:hover {
     background: #007f67;
 }
-
 .button:active {
     transform: scale(0.98);
 }
-
 .text {
     text-align: center;
 }
-
 .link {
     color: #252c6a;
     text-decoration: none;
     cursor: pointer;
 }
-
 .hidden {
     display: none;
 }
-
 h1,
 p {
     margin-top: 0;
 }
-
 .link:hover {
     text-decoration: underline;
 }
-
 .title {
     text-align: center;
 }
-
 @media screen and (max-width: 1650px) {
 
     html,
@@ -105,7 +91,6 @@ p {
         background-size: cover;
     }
 }
-
 @media screen and (min-width:1650px) and (max-width: 3000px) {
 
     html,
