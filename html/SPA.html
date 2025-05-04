@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/toDoList.css">
+    <link rel="stylesheet" href="../css/logIn-singUp.css">
+
+    <title>SPA</title>
+</head>
+<body>
+    <main id="main"></main>
+    <template id="signUp">
+        <div class="container formSingUpLogIn" id="signUpDiv">
+            <form class="form" id="createAccount">
+                <h1 class="title">Sign Up</h1>
+                <input type="text" id="nameSign" name="nameSign" class="input" autofocus placeholder="Username"><br>
+                <input type="text" id="emailSign" class="input" autofocus placeholder="Email Address"><br>
+                <input type="password" id="passwordSign" class="input" autofocus placeholder="Password"><br>
+                <input type="password" id="passwordSign2" class="input" autofocus placeholder="Confirm password"><br>
+                <input type="checkbox" id="messege" name="messege" value="messege">
+                <label for="messege">I want to receive messages.</label><br><br>
+                <button class="button" id="okeySign">Continue</button><br>
+                <p class="text">
+                    <a class="link" href="#logIn" id="linkLogin">Already have an account? Log in</a>
+                </p>
+            </form>
+        </div>
+        <script src="../js/signUp.js"></script>
+    </template>
+    <template id="logIn">
+        <link rel="stylesheet" href="../css/logIn-singUp.css">
+        <div class="container formSingUpLogIn" id="logInDiv">
+            <form class="form" id="login">
+                <h1 class="title">Log In</h1>
+                <input type="text" id="emailLog" name="email" class="input" autofocus placeholder="email" required><br>
+                <input type="password" name="password" id="passwordLog" class="input" autofocus placeholder="Password"
+                    required><br>
+                <button class="button" id="okeyLog">Continue</button><br>
+                <p class="text">
+                    <a class="link" href="#signUp" id="linkCreateAccount">Don't have an account? Create account</a>
+                </p>
+            </form>
+        </div>
+        <script src="../js/logIn.js"></script>
+    </template>
+    <template id="toDoList">
+        <nav id="mySidenav">
+            <h2> My To-Do List</h2>
+            <a id="myTasks" onclick="" target="_parent ">My tasks</a>
+            <a id="importantTasks" target="_parent ">Important</a>
+            <a id="signOut" target="_parent ">Sign Out🔚</a>
+        </nav>
+        <div id="container">
+            <h2 id="title">Hello!<br> Your tasks are waiting to you in the list!</h2>
+        </div>
+        <div id="newTask">
+            <input id="textTask" type="text" placeholder="Title" id="taskName">
+            <input type="date" id="dateTask" min="2023-01-01">
+            <input id="notesOfTask" type="text" placeholder="Task notes" id="taskName">
+            <button id="btnAddTask">Add Task</button>
+        </div>
+        <div id="detailsOfTask">
+        </div>
+        <script src="../js/toDoList.js"></script>
+    </template>
+    <script src="../js/SPA.js"></script>
+    <script src="../js/server.js"></script>
+    <script src="../js/netWork.js"></script>
+    <script src="../js/FAJAX.js"></script>
+    <script src="../js/dataBase.js"></script>
+</body>
+
+</html>

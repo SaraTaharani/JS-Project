@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+html,
+body {
+    height: 100%;
+    font-size: 12px;
+    margin: 0;
+    font-family: 'Quicksand', 'Bubblegum Sans', serif;
+    font: 500 1rem 'Quicksand', sans-serif;
+    background-image: url("../images/backroung005.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-position: bottom;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    overflow:hidden;
+    grid-template-areas: "sn t t t t t t" 
+    "sn nt nt nt nt nt nt"; 
+    grid-template-rows: 80% 20%  ;
+}
+
+nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    grid-area: sn;
+}
+
+nav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+nav a {
+    transition: 0.7s;
+}
+
+nav h2,
+a:hover {
+    color: rgb(241, 241, 241);
+}
+
+nav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+span {
+    background-color: rgb(241, 241, 241);
+    display: block;
+    font-size: 20px;
+    border: 0.1rem solid black;
+    border-radius: 5px;
+    left: 0;
+    height: 7%;
+    padding: 2px;
+    z-index: -1;
+}
+
+#container {
+    z-index: 0;
+    overflow:scroll;
+    overflow-x: hidden;
+    max-width: 98%;
+   height: 90%;
+    margin-left: 2%;
+    margin-top: 1%;
+    margin-right: 2%;
+    margin-bottom: 1%;
+    padding: 2rem;
+    padding-top: 0;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    font: 500 1rem 'Quicksand', sans-serif;
+    float: right;
+    grid-area: t;
+}
+
+#mySidenav {
+    width: 200px;
+    margin-left: 0;
+    background-color: #041a20;
+}
+
+
+h2 {
+    padding: 8px 20px;
+}
+#title{
+    color: rgb(22, 90, 117);
+    font-size:35px;
+    text-align: center;
+    margin-top: 20%;
+}
+#textTask, #notesOfTask {
+    border: 0.1rem solid black;
+    border-radius: 10px;
+    width: 85%;
+    height: 30%;
+    margin: 1%;
+}
+
+.textTask {
+    max-width: 80%;
+}
+
+#newTask {
+    margin-left: 2%;
+    margin-top: 1%;
+    height: 80%;
+    margin-right: 2%;
+    margin-bottom: 1%;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    grid-area: nt;
+}
+
+#btnAddTask,
+#dateTask {
+    margin: 1%;
+    height: 30%;
+    width: 8%;
+    border-radius: 10px;
+    font-size: 15px;
+    /* margin-left: 2.5%; */
+}
+
+.btnImportant{
+    background-image: url("../images/important.png");
+    width:2%;
+    height: 70%;
+    background-size: cover;
+    background-position: center;
+    border: 0.1rem solid black;
+    border-radius: 10px;
+    float: right;
+    margin-top: 3.5px;
+    z-index: 0;
+}
+.btnDelete{
+    background-image: url("../images/delete.png");
+    width:2%;
+    height:70%;
+    background-size: cover;
+    background-position: center;
+    border: 0.1rem solid black;
+    border-radius: 10px;
+    float: right;
+    margin-left: 3px;
+    margin-top: 3.5px;
+    z-index: 0;
+}
+
+#detailsOfTask{
+    background-color: rgb(241, 241, 241);
+    display: none;
+     width: 150px;
+     height: 112%;
+    margin-left: 53%;
+    margin-top: 4%;
+    padding: 2rem;
+    border: 0.1rem solid black;
+    border-radius: 4px;
+    color: rgb(22, 90, 117);
+    z-index: 1;
+}
+.formTitles{
+    display: block;
+    max-width: 150px;
+}
+#dateTitle, .titleClass
+{
+    display: inline-block;
+    color: rgb(22, 90, 117);
+    font-size:35px;
+}
